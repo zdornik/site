@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Страница 1 — Списки, якоря, таблица</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <a href="index.html">Моя информационная среда</a>
+    <a class="item" href="index.html">Главная</a>
+    <a class="item" href="page1.html">Стр.1</a>
+    <a class="item" href="page2.html">Стр.2</a>
+    <a class="item" href="forms.html">Формы</a>
+    <a class="item" href="dom_read.html">DOM JS</a>
+    <a class="item" href="dom_change.html">Кириллица-Latin</a>
+    <a class="item" href="algo.html">Алгоритм</a>
+    <a class="item" href="https://github.com/vmarshirov/g06u28/blob/main/030_js/public_html/0121_abc.html" target="_blank">Пример (внешн.) </a>
+        <a id="top"></a>
+
+            <h1>Подсолнухи</h1>
+            <div class="toc">
+                <a href="#sec1">раздел 1</a>
+                <a href="#sec2">раздел 2</a>
+                <a href="#table">таблица</a>
+                <a href="#top">к началу</a>
+            </div>
+        <section>
+            <p>
+                Внутренняя ссылка на фрагмент: <a href="#table">перейти к таблице</a>.
+            </p>
+        </section>
+        <section id="sec1" class="section">
+            <h2>Раздел 1 — списки</h2>
+            <h3>Классификация</h3>
+            <ol>
+                <li>Эукариоты</li>
+                <li>Растения</li>
+                <li>Асроцветные</li>
+                <li>Подсолнечник</li>
+            </ol>
+            <h3>Виды</h3>
+            <ul>
+                <li>Подсолнечник однолетний</li>
+                <li>Клубненосный подсолнечник</li>
+            </ul>
+            <h3>Полезность видов</h3>
+            <ul>
+                <li>Подсолнечник однолетний
+                    <ol>
+                        <li>Семечки</li>
+                        <li>Масло</li>
+                    </ol>
+                </li>
+                <li>Клубненосный подсолнечник
+                    <ul>
+                        <li>Сироп топинамбура</li>
+                        <li>Очень полезный к употреблению</li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="note"><a href="#top">Вернуться к началу</a></p>
+        </section>
+
+        <section id="sec2" class="section">
+            <h2>Раздел 2 — Подсолнухи в культуре</h2>
+            <figure>
+                <img src=images/sunflowers.jpg alt="Изображение подсолнечника" title="Подсолнух"/>
+                <figcaption class="note">Подсолнухи Винсента ван Гога.</figcaption>
+            </figure>
+            <p class="note"><a href="#top">Вернуться к началу</a></p>
+        </section>
+
+        <section id="table" class="section">
+            <h2>Таблица с фоновым изображением, картинкой в ячейке и гиперссылками</h2>
+            <table class="table" background="images/sunflower1.jpg" >
+                <tr>
+                    <th>Раздел</th>
+                    <th>Ссылка</th>
+                    <th>Картинка в ячейке</th>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                    <td><a href="https://github.com/vmarshirov/g06u28/tree/main/010_html/060_anchor" target="_blank">Открыть пример</a></td>
+                    <td class="center">
+                        <img src="images/bird.jpg" alt="bird" class="picture" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Формы</td>
+                    <td><a href="forms.html">страница форм</a></td>
+                    <td class="center">
+                        <a href="images/bird.jpg" target="_blank">
+                            <img src="images/bird.jpg" class="picture" alt="bird" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <p class="note"><a href="#top">Вернуться к началу</a></p>
+        </section>
+
+</body>
+
+</html>

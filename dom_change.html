@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Изменяем кириллицу на латиницу по клику</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <script>
+        function change_password(){
+            document.getElementById("last").innerText = "Zdor";
+            document.getElementById("first").innerText = "Nikita";
+        }
+    </script>
+</head>
+
+<body>
+   <a href="index.html">Моя информационная среда</a>
+    <a class="item" href="index.html">Главная</a>
+    <a class="item" href="page1.html">Стр.1</a>
+    <a class="item" href="page2.html">Стр.2</a>
+    <a class="item" href="forms.html">Формы</a>
+    <a class="item" href="dom_read.html">DOM JS</a>
+    <a class="item" href="dom_change.html">Кириллица-Latin</a>
+    <a class="item" href="algo.html">Алгоритм</a>
+    <a class="item" href="https://github.com/vmarshirov/g06u28/blob/main/030_js/public_html/0121_abc.html" target="_blank">Пример (внешн.) </a>
+
+        <h1>Изменяем кириллицу на латиницу по клику</h1>
+    <section>
+        <p>Фамилия: <span id="last">Здор</span></p>
+        <p>Имя: <span id="first">Никита</span></p>
+        <p>Год рождения: <span id="year">2006</span></p>
+        <button onclick="change_password()">Преобразовать</button>
+    </section>
+</body>
+
+</html>
