@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Решение алгоритмической задачи</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <script>
+    function calculateZ() {
+      let X = parseFloat(document.getElementById("X").value);
+      let Y = parseFloat(document.getElementById("Y").value);
+      let Z;
+      if (X > Y) {
+        Z = X*Y;
+      } else {
+        Z = Math.log(X + Y);
+      }
+      document.getElementById("result").textContent = "Z = " + Z;
+    }
+    </script>
+</head>
+
+<body>
+    <a href="index.html">Моя информационная среда</a>
+    <a class="item" href="index.html">Главная</a>
+    <a class="item" href="page1.html">Стр.1</a>
+    <a class="item" href="page2.html">Стр.2</a>
+    <a class="item" href="forms.html">Формы</a>
+    <a class="item" href="dom_read.html">DOM JS</a>
+    <a class="item" href="dom_change.html">Кириллица-Latin</a>
+    <a class="item" href="algo.html">Алгоритм</a>
+    <a class="item" href="https://github.com/vmarshirov/g06u28/blob/main/030_js/public_html/0121_abc.html" target="_blank">Пример (внешн.) </a>
+            <h1>Решение алгоритмической задачи</h1>
+            <h2>Пример задачи</h2>
+            <p><b>Задача:</b>Даны вещественные числа X и Y . Вычислить Z. Z = XY при X > Y, Z = ln(X + Y ) в противном случае.</p>
+            <label>Число X <input id="X" type="text" value="12"></label>
+            <label>Число Y <input id="Y" type="text" value="13"></label>
+            <button onclick="calculateZ()">Решить</button>
+            <p>Ответ</p>
+            <div id="result" class="output">—</div>
+</body>
+
+</html>
