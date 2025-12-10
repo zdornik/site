@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Space Museum — Главная</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark solid-nav fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Space Museum</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Открыть меню">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="planets.html">Планеты</a></li>
+        <li class="nav-item"><a class="nav-link" href="missions.html">Миссии</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Каталог</a></li>
+        <li class="nav-item"><a class="nav-link" href="form.html">Форма</a></li>
+        <li class="nav-item nav-thumb ms-lg-3">
+          <a class="nav-link" href="gallery.html" title="Быстрый переход в галерею">
+            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=120&q=70" alt="Галактическое облако">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="top"></div>
+
+<header class="hero">
+  <div class="container">
+    <div class="row align-items-center justify-content-center g-4 text-center text-lg-start">
+      <div class="col-lg-6 col-xl-5">
+        <p class="eyebrow mb-1">Космический музей XXI века</p>
+        <h1 class="mb-3">Добро пожаловать в архив живых историй о Вселенной</h1>
+        <p class="lead">Мы собираем артефакты, миссии и людей, которые двигают человечество вглубь космоса.</p>
+        <div class="section-nav hero-nav mt-3 justify-content-center justify-content-lg-start">
+          <a href="#overview">Экспозиция</a>
+          <a href="#timeline">История</a>
+          <a href="#visit">Как посетить</a>
+          <a href="#top">К началу</a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-5 text-center">
+    <figure class="card-panel hero-figure text-center">
+      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80" class="img-fluid rounded mb-3" alt="Панорама экспозиции с космическими аппаратами">
+        </figure>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section id="overview" class="row g-4 align-items-stretch">
+    <div class="col-md-6">
+      <div class="card-panel h-100">
+        <h2>Экспозиция сегодня</h2>
+        <p>Тематические залы посвящены планетам, роботам-исследователям и будущим межзвёздным перелётам.</p>
+        <ul class="highlight-list">
+          <li>Интерактивная модель Солнечной системы</li>
+          <li>Капсула «Восток» с оригинальными приборами</li>
+          <li>Демонстрация марсохода Perseverance в масштабе 1:2</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-panel h-100 d-flex flex-column">
+        <h2>Инфо-навигация</h2>
+        <p>Быстрые ссылки на ключевые материалы по музейной теме.</p>
+        <div class="mini-links">
+          <a href="missions.html#apollo">→ Программа «Аполлон»</a>
+          <a href="missions.html#voyager">→ Зонды «Вояджер»</a>
+          <a href="planets.html#mars">→ Марс и подготовка экспедиций</a>
+        </div>
+        <div class="mt-auto small text-muted">Все ссылки открываются в текущем окне — не потеряете маршрут.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline" class="row g-4 mt-4">
+    <div class="col-lg-4">
+      <div class="card-panel h-100">
+        <h3>1957</h3>
+        <p>Спутник-1 положил начало эре космических запусков.</p>
+        <p class="caption">Сигнал спутника можно услышать в аудиозале.</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card-panel h-100">
+        <h3>1969</h3>
+        <p>Нил Армстронг и Базз Олдрин оставили следы на Луне.</p>
+        <p class="caption">В витрине — копия лунного ботинка с подробными пояснениями.</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card-panel h-100">
+        <h3>2024</h3>
+        <p>Программы Artemis и Starship возвращают человека к Луне и готовят Марс.</p>
+        <p class="caption">Трекеры полётов обновляются в реальном времени.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="row g-4 mt-4">
+    <div class="col-md-7">
+      <div class="card-panel h-100">
+        <h2>Как попасть в музей</h2>
+        <p>Ежедневно с 10:00 до 21:00. Экскурсии — каждый час, бронирование на странице формы.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a class="btn btn-info" href="form.html">Записаться</a>
+          <a class="btn btn-outline-light" href="#top">Вернуться к началу</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="card-panel h-100 text-center">
+        <img src="https://images.unsplash.com/photo-1447433865958-f402f562b843?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded mb-2" alt="Макет кольца Сатурна">
+        <p class="caption mb-0">Инсталляция «Кольца Сатурна» с пояснениями об их составе.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

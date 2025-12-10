@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Планеты</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark solid-nav fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Space Museum</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Открыть меню">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="planets.html">Планеты</a></li>
+        <li class="nav-item"><a class="nav-link" href="missions.html">Миссии</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Каталог</a></li>
+        <li class="nav-item"><a class="nav-link" href="form.html">Форма</a></li>
+        <li class="nav-item nav-thumb ms-lg-3">
+          <a class="nav-link" href="gallery.html" title="Быстрый переход в галерею">
+            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=120&q=70" alt="Галактическое облако">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="top"></div>
+
+<div class="container">
+
+<h1 class="text-center mb-2">Планеты Солнечной системы</h1>
+<p class="text-center text-muted">Краткие профили планет, представленных в экспозиции музея.</p>
+
+<div class="section-nav mb-4 justify-content-center">
+  <a href="#earth">Земля</a>
+  <a href="#mars">Марс</a>
+  <a href="#jupiter">Юпитер</a>
+  <a href="#top">К началу</a>
+</div>
+
+<section id="earth" class="card-panel mb-4 planet-section">
+  <div class="row g-4 align-items-center">
+    <div class="col-lg-6">
+      <h2>Земля</h2>
+      <p>Единственная известная планета, на которой существует жизнь. 71% поверхности покрывают океаны, регулирующие климат.</p>
+      <ul class="highlight-list">
+        <li>Смена магнитного поля фиксируется каждые ~200 тысяч лет</li>
+        <li>Плотная атмосфера защищает от метеоритов и радиации</li>
+        <li>Луна стабилизирует наклон оси — без неё погода была бы хаотичней</li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <figure class="mb-0">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" class="img-fluid rounded mb-2" alt="Вид Земли из космоса">
+        <figcaption>Снимок «Голубой мрамор» — постоянный экспонат мультимедийной зоны.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="mars" class="card-panel mb-4 planet-section">
+  <div class="row g-4 align-items-center flex-lg-row-reverse">
+    <div class="col-lg-6">
+      <h2>Марс</h2>
+      <p>Ключевой объект научных миссий NASA и ESA. Атмосфера разрежена, но в прошлом Марс имел воду и, возможно, условия для жизни.</p>
+      <ul class="highlight-list">
+        <li>Долина Маринера длиной 4000 км — крупнейший каньон в Солнечной системе</li>
+        <li>Полярные шапки содержат воду и сухой лёд</li>
+        <li>Вулкан Олимп — почти втрое выше Эвереста</li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <figure class="mb-0">
+        <img src="https://images.unsplash.com/photo-1580428180121-1c7a1fc7f3b7?auto=format&fit=crop&w=1200&q=80" class="img-fluid rounded mb-2" alt="Поверхность Марса">
+        <figcaption>В музее показан панорамный снимок кратера Джезеро с комментариями геологов.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="jupiter" class="card-panel mb-4 planet-section">
+  <div class="row g-4 align-items-center">
+    <div class="col-lg-6">
+      <h2>Юпитер</h2>
+      <p>Газовый гигант с мощнейшими магнитными полями и знаменитыми полосами облаков. Его спутники — целые миры, многие с океанами под льдом.</p>
+      <ul class="highlight-list">
+        <li>Большое красное пятно — шторм, бушующий минимум 350 лет</li>
+        <li>Европа и Ганимед — кандидаты на поиск внеземной жизни</li>
+        <li>Магнитосфера Юпитера простирается за орбиту Сатурна</li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <figure class="mb-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" class="img-fluid rounded mb-2" alt="Юпитер и его облака">
+        <figcaption>В экспозиции — кадры миссий Juno и Voyager с пояснениями по химическому составу атмосфер.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

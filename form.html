@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Оформление заказа</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark solid-nav fixed-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">Space Museum</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+<div id="navMenu" class="collapse navbar-collapse">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+<li class="nav-item"><a class="nav-link" href="planets.html">Планеты</a></li>
+<li class="nav-item"><a class="nav-link" href="missions.html">Миссии</a></li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+<li class="nav-item"><a class="nav-link" href="shop.html">Каталог</a></li>
+<li class="nav-item"><a class="nav-link" href="form.html">Форма</a></li>
+<li class="nav-item nav-thumb ms-lg-3">
+  <a class="nav-link" href="gallery.html" title="Быстрый переход в галерею">
+    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=120&q=70" alt="Галактическое облако">
+  </a>
+</li>
+</ul></div></div></nav>
+<div id="top"></div>
+
+<div class="container">
+<h1 class="mb-2">Оформление заказа</h1>
+<p class="text-muted mb-3">Форма отправляет данные на удалённый сервер httpbin.org/post и сразу демонстрирует корректную передачу полей.</p>
+
+<div class="section-nav mb-3">
+  <a href="#order">К форме</a>
+  <a href="#top">К началу</a>
+</div>
+
+<div class="card-panel">
+  <div class="row g-4 align-items-center">
+    <div class="col-lg-5">
+      <h2 class="mb-2">Что включено</h2>
+      <p>Мы резервируем артефакт из каталога, подготавливаем его к выдаче или доставке и присылаем письмо с подтверждением.</p>
+      <ul class="highlight-list">
+        <li>Заполнены значения по умолчанию — запрос не будет пустым</li>
+        <li>Поля text, number и radio обязательны</li>
+        <li>Оценочная стоимость подставляется из каталога</li>
+      </ul>
+      <p class="price-hint small text-info">Оценочная стоимость: будет подставлена из каталога.</p>
+    </div>
+    <div class="col-lg-7">
+      <form id="order" action="https://httpbin.org/post" method="POST" class="row gy-3">
+        <div class="col-12">
+          <label class="form-label">Ваше имя</label>
+          <input type="text" name="customer_name" class="form-control" required value="Гость музея">
+        </div>
+        <div class="col-md-7">
+          <label class="form-label">Название экспоната</label>
+          <input type="text" name="product_name" class="form-control" required value="Сувенир «Ровер»">
+        </div>
+        <div class="col-md-5">
+          <label class="form-label">Количество</label>
+          <input type="number" name="item_count" min="1" class="form-control" required value="1">
+        </div>
+        <div class="col-12">
+          <label class="form-label">Тип доставки</label>
+          <div class="d-flex gap-3 flex-wrap">
+            <label class="form-check-label">
+              <input type="radio" name="delivery" value="express" class="form-check-input me-2" checked> Экспресс
+            </label>
+            <label class="form-check-label">
+              <input type="radio" name="delivery" value="standard" class="form-check-input me-2"> Обычная
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <label class="form-label">Комментарий</label>
+          <textarea name="comment" class="form-control" rows="3" placeholder="Например: подготовить к демонстрации на экскурсии."></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-info w-100 mt-2">Отправить заказ</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

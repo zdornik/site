@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Галерея</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark solid-nav fixed-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">Space Museum</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+<div id="navMenu" class="collapse navbar-collapse">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+<li class="nav-item"><a class="nav-link" href="planets.html">Планеты</a></li>
+<li class="nav-item"><a class="nav-link" href="missions.html">Миссии</a></li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+<li class="nav-item"><a class="nav-link" href="shop.html">Каталог</a></li>
+<li class="nav-item"><a class="nav-link" href="form.html">Форма</a></li>
+<li class="nav-item nav-thumb ms-lg-3">
+  <a class="nav-link" href="gallery.html" title="Быстрый переход в галерею">
+    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=120&q=70" alt="Галактическое облако">
+  </a>
+</li>
+</ul></div></div></nav>
+<div id="top"></div>
+
+<div class="container">
+<h1 class="text-center mb-2">Галерея космоса</h1>
+<p class="text-center text-muted mb-4">Выборка снимков, сопровождаемых краткими пояснениями кураторов.</p>
+
+<div class="section-nav justify-content-center mb-4">
+  <a href="#telescopes">Телескопы</a>
+  <a href="#stations">Корабли и станции</a>
+  <a href="#nebulae">Туманности</a>
+  <a href="#top">К началу</a>
+</div>
+
+<section id="telescopes" class="card-panel mb-4">
+  <h2 class="mb-3">Телескопы</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <figure class="mb-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg" class="img-fluid rounded mb-2" alt="Телескоп Хаббл над Землёй">
+        <figcaption>«Хаббл» ведёт наблюдения уже более тридцати лет, регулярно обновляя наш взгляд на Вселенную.</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <figure class="mb-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/James_Webb_Space_Telescope_mirror37.jpg" class="img-fluid rounded mb-2" alt="Телескоп Джеймс Уэбб">
+        <figcaption>James Webb использует инфракрасный спектр, чтобы разглядеть первые галактики.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="stations" class="card-panel mb-4">
+  <h2 class="mb-3">Корабли и станции</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <figure class="mb-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/International_Space_Station_after_undocking_of_STS-132.jpg" class="img-fluid rounded mb-2" alt="Международная космическая станция">
+        <figcaption>МКС — лаборатория, где проверяются технологии будущих перелётов на Луну и Марс.</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <figure class="mb-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Crew_Dragon_at_the_ISS_docking_adapter.jpg" class="img-fluid rounded mb-2" alt="Корабль Crew Dragon в космосе">
+        <figcaption>Crew Dragon доказал, что частные компании могут доставлять экипаж на орбиту.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="nebulae" class="card-panel mb-4">
+  <h2 class="mb-3">Туманности</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <figure class="mb-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Carina_Nebula.jpg" class="img-fluid rounded mb-2" alt="Планетарная туманность">
+        <figcaption>Туманности — колыбель звёзд и элементарных частиц, из которых складываются планеты.</figcaption>
+      </figure>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <figure class="mb-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/NGC_6302%2C_the_Bug_Nebula.jpg" class="img-fluid rounded mb-2" alt="Газовое облако">
+        <figcaption>Газовые облака подсвечиваются излучением молодых звёзд, создавая яркие узоры.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
